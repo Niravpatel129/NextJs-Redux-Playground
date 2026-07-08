@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Redux Playground
 
-## Getting Started
+A small Next.js learning playground for experimenting with the `pages/` router, basic React page structure, and local development workflow.
 
-First, run the development server:
+Despite the repository name, the current codebase is still a minimal Next.js app and does not yet include Redux wiring.
+
+## Current scope
+
+- Next.js app using the legacy `pages/` directory
+- Simple homepage component
+- Basic CSS module styling
+- Local development, build, and start scripts
+
+## Tech stack
+
+- Next.js 10
+- React 17
+- CSS Modules
+
+## Getting started
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open the app locally:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Available scripts
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+npm run dev      # Start the local development server
+npm run build    # Build the app for production
+npm run start    # Start the production build
+```
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+pages/
+  index.js        # Main page
+  api/            # API route examples, if present
+styles/           # CSS module styles
+public/           # Static assets
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Status
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This repository is best treated as a lightweight Next.js practice sandbox. Add Redux setup, slices/store configuration, and example state-driven UI before using it as an actual Redux reference project.
